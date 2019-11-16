@@ -3,7 +3,7 @@ import Songs from '../data/songs.js';
 import '../../styles/composition.css';
 
 
-const Playlist = (props) => {
+const Playlist = props => {
   const createCompositionList = () => {
       return Songs.map((composition, index) => {
         return createCompositionItem(composition, index);

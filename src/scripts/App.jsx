@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Playlist onChangeSong={(newSong) => setCurrentSong(newSong)}/>
+      <Playlist onChangeSong={newSong => setCurrentSong(newSong)}/>
       <AudioControls song={currentSong} className="App__controls" />
     </div>
   );

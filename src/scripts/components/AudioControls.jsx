@@ -1,8 +1,7 @@
 import React from 'react';
 
 
-const AudioControls = (props) => {
-  console.log(props);
+const AudioControls = props => {
   return (
     <audio autoPlay controls src={props.song} className={props.className}>
     </audio>
