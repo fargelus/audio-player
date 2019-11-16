@@ -1,12 +1,13 @@
 import React from 'react';
-import song from '../../assets/music/wonderwall.mp3';
 
 
 const AudioControls = (props) => {
+  console.log(props);
   return (
-    <audio controls src={song} {...props}>
+    <audio autoPlay controls src={props.song} className={props.className}>
     </audio>
   );
 }
+
 
 export default AudioControls;

@@ -3,7 +3,7 @@ import Songs from '../data/songs.js';
 import '../../styles/composition.css';
 
 
-const Playlist = () => {
+const Playlist = (props) => {
   const createCompositionList = () => {
       return Songs.map((composition, index) => {
         return createCompositionItem(composition, index);
@@ -19,7 +19,11 @@ const Playlist = () => {
         </div>
 
         <div>
-          <button className="play-btn" type="button">&#9658;</button>
+          <button type="button"
+                  onClick={() => props.onChangeSong(item.src)}
+                  className="play-btn">
+            &#9658;
+          </button>
           <div>{item.duration}</div>
         </div>
       </div>

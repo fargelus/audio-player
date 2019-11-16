@@ -1,11 +1,11 @@
 const path = require('path');
-const absolutePath = path.resolve(__dirname, 'src/assets/music');
+const absolutePath = path.resolve(__dirname, 'data/music') + '/';
 
 const Songs = [
   {
-    'title': 'Invicible',
+    'title': 'Invincible',
     'author': 'MGK',
-    'src': absolutePath + 'invicible.mp3',
+    'src': absolutePath + 'invincible.mp3',
     'duration': '3:06',
   },
   {
